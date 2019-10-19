@@ -16,7 +16,7 @@ for x in range(0,len(lines)):
     comments = soup.findAll(text=lambda text:isinstance(text, Comment))
     print("Found "+str(len(comments))+" comments")
     for x in range(0,len(comments)):
-        print comments[x]                                                                   #Print all the comments from the page (If Any)
+        print(comments[x])                                                                   #Print all the comments from the page (If Any)
     print("\n\n\nKeyword API")
     api = soup.body.findAll(text='api')
     API = soup.body.findAll(text='API')
